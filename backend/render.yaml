@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fastapi-gemini-app
+    env: docker
+    plan: starter
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false # Add your API key via Render's dashboard
+    healthCheckPath: /
+    region: oregon
