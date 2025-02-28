@@ -11,58 +11,58 @@ const MeditationAudioPlayer = () => {
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const audioRef = useRef(null);
 
-  // const meditations = [
-  //   { 
-  //     id: 1, 
-  //     name: 'Mindful Breathing', 
-  //     description: 'A gentle meditation focusing on breath awareness',
-  //     src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' 
-  //   },
-  //   { 
-  //     id: 2, 
-  //     name: 'Body Scan Relaxation', 
-  //     description: 'Progressive relaxation for stress relief',
-  //     src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' 
-  //   },
-  //   { 
-  //     id: 3, 
-  //     name: 'Anxiety Relief', 
-  //     description: 'Calming meditation for anxiety and worry',
-  //     src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' 
-  //   },
-  //   { 
-  //     id: 4, 
-  //     name: 'Sleep Meditation', 
-  //     description: 'Gentle guidance to help you fall asleep',
-  //     src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' 
-  //   },
-  // ];
   const meditations = [
-    {
-      id: 1,
-      name: 'Mindful Breathing',
+    { 
+      id: 1, 
+      name: 'Mindful Breathing', 
       description: 'A gentle meditation focusing on breath awareness',
-      src: 'https://cdn.pixabay.com/download/audio/2022/03/05/audio_27857a9448.mp3'
+      src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' 
     },
-    {
-      id: 2,
-      name: 'Body Scan Relaxation',
+    { 
+      id: 2, 
+      name: 'Body Scan Relaxation', 
       description: 'Progressive relaxation for stress relief',
-      src: 'https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1ebd.mp3'
+      src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' 
     },
-    {
-      id: 3,
-      name: 'Anxiety Relief',
+    { 
+      id: 3, 
+      name: 'Anxiety Relief', 
       description: 'Calming meditation for anxiety and worry',
-      src: 'https://cdn.pixabay.com/download/audio/2022/03/09/audio_861be97c6d.mp3'
+      src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' 
     },
-    {
-      id: 4,
-      name: 'Sleep Meditation',
+    { 
+      id: 4, 
+      name: 'Sleep Meditation', 
       description: 'Gentle guidance to help you fall asleep',
-      src: 'https://cdn.pixabay.com/download/audio/2022/04/27/audio_c9b7515236.mp3'
+      src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' 
     },
   ];
+  // const meditations = [
+  //   {
+  //     id: 1,
+  //     name: 'Mindful Breathing',
+  //     description: 'A gentle meditation focusing on breath awareness',
+  //     src: 'https://cdn.pixabay.com/download/audio/2022/03/05/audio_27857a9448.mp3'
+  //   },
+  //   {
+  //     id: 2,
+  //     name: 'Body Scan Relaxation',
+  //     description: 'Progressive relaxation for stress relief',
+  //     src: 'https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1ebd.mp3'
+  //   },
+  //   {
+  //     id: 3,
+  //     name: 'Anxiety Relief',
+  //     description: 'Calming meditation for anxiety and worry',
+  //     src: 'https://cdn.pixabay.com/download/audio/2022/03/09/audio_861be97c6d.mp3'
+  //   },
+  //   {
+  //     id: 4,
+  //     name: 'Sleep Meditation',
+  //     description: 'Gentle guidance to help you fall asleep',
+  //     src: 'https://cdn.pixabay.com/download/audio/2022/04/27/audio_c9b7515236.mp3'
+  //   },
+  // ];
 
   useEffect(() => {
     // Update audio source when track changes
